@@ -1,0 +1,24 @@
+
+<%- include('header')%>
+
+<!--erst berechnen,dann in den browser-->
+<% for(let i=1; i<=5; i++){%>
+
+    <% let text = "ungerade";
+        if(i % 2 === 0)
+        text = "gerade";
+    %>
+
+    <p> hello world, <%= i %> <%= text %> </p>
+<%}%>
+
+<br>
+
+<!--wird vor ort im browser gebaut-->
+<script>
+    for(let i=1; i<=5; i++){
+        document.write('<p> hello world </p>');
+    }
+</script>
+
+<%- include('footer')%>

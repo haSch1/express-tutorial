@@ -1,0 +1,5 @@
+GET http://localhost:3000/nachname/schmid/vorname/harald
+
+###
+
+GET http://localhost:3000/nachname/schmid/vorname/harald?wohnort=bonstetten&plz=86486

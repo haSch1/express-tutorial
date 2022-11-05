@@ -1,19 +1,10 @@
 const express = require('express');
 const app = express();
 
+//egal welche url oder pfad ich als request sende bekomme ich folgenden respond
 app.all('*', (req, res) => {
-    //express übernimmt header usw. wir kümmrn uns nur um den inhalt
-    console.log(res);
-    res.send('<h1> hallo express</h1>')
-    //console.log(res);
-    
+    res.send('<h1 style="background:green;"> hallo express</h1>');
 });
-
-//req
-//das war reinkommt. von wem. welcher broswser. welche ip adresse
-
-//res
-//das was rausgeht. was ich abgeben möchte.
 
 
 app.listen(3000, () => {
